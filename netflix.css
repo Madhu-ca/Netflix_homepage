@@ -15,6 +15,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: black;
     color: #999999;
+
 }
 
 .section{
@@ -22,7 +23,7 @@ body{
 }
 .root{
     background: linear-gradient(rgba(8, 8, 8, 0.884),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.703)) ,url("images/Background.jpeg") no-repeat center center/cover; 
-    
+   
 }
 
 /* header section */
@@ -103,8 +104,9 @@ z-index: 1;
 }
 
 .titles-container h1{
-    font-size: 65px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: bold;
+    margin:0 auto;
     padding-bottom: 3%;
 }
 .titles-container h2{
@@ -208,12 +210,12 @@ section{
 }
 .tv .animation-container video{
     position:relative;
-    width:86%;
+    width:78%;
     height:auto;
-    right:86%;
+    right:88%;
     top:80%;
     z-index:0;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 
@@ -225,6 +227,7 @@ section{
     align-items: center;
     margin: 0 5%;
     color: white;
+    margin-bottom: 5%;
 }
 
 .mobile .animation-container{
@@ -232,14 +235,14 @@ section{
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    /* position: relative; */
-    width:100%;
+    position: relative;
+    width:160%;
     height: 100%;   
 }
 
 .mobile .animation-container img{
     position:relative;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: -20%;
     z-index: -1;
@@ -252,13 +255,13 @@ section{
     border:2px solid gray;
     border-radius:10px;
     background: #090909;
-    width:50%;
+    width:70%;
     padding:2%;
     z-index:1;
 }
 .animation-text{
     display: block;
-    margin-left:-15%;
+    margin-left:5%;
 }
 .animation-text h4{
     color: #ffffff;
@@ -272,8 +275,8 @@ section{
 
 .mobile .animation-container .animation img{
     top:10%;
-    width:60px;
-    height: 70px;
+    width:50px;
+    height: 60px;
 }
 
 
@@ -460,3 +463,68 @@ text-decoration: underline;
     cursor: pointer;   
 }
 
+@media screen and(max-width:1440px){
+    .root{
+        padding:5% 5%;
+    }
+   .main-container{
+    margin:0 20%;
+   }
+}
+@media screen and(min-width:900px) and (max-width:1030px){
+    .root{
+        padding:5% 5%;
+    }
+   .main-container{
+    margin:0 20%;
+   }
+
+}
+@media screen and(min-width:680px) and (max-width:780px){
+    .root{
+        padding:5% 5%;
+    }
+   .main-container{
+    margin:0 20%;
+   }
+   .email-container input{
+    width:380px;
+    height: 4rem;
+    
+   }
+   .email-container button{
+    height: 4.1rem;
+    width:200px;
+    font-size:20px;
+}
+
+@media screen and(min-width:300px) and (max-width:430px){
+    .root{
+        padding:5% 5%;
+    }
+   .main-container{
+    margin:0 20%;
+   }
+   .titles-container h1{
+    font-size: 40px;
+   }
+   .chidren {
+    display:flex;
+    flex-direction: column;
+  }
+    
+   .email-container{
+    display: flex;
+    flex-direction: column;
+   }
+   .email-container input{
+    width:100px;
+    height: 3rem;
+    
+   }
+   .email-container button{
+    height: 3.1rem;
+    width:50px;
+    font-size:20px;
+}
+}
