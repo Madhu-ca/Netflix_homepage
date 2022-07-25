@@ -414,7 +414,15 @@ footer{
     font-size: 14px;
     list-style: none;
     line-height: 35px;
+   
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(115, 105, 105);
+}
+.footer a:hover{
 
+text-decoration: underline;
 }
 
 .lang-selection-footer{
