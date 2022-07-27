@@ -19,7 +19,7 @@ body{
 }
 
 .section{
-    border-bottom: 5px solid rgb(56, 51, 51);
+    border-bottom: 8px solid rgb(40, 37, 37);
 }
 .root{
     background: linear-gradient(rgba(8, 8, 8, 0.884),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.703)) ,url("images/Background.jpeg") no-repeat center center/cover; 
@@ -54,7 +54,7 @@ body{
     border: 2px solid white;
     border-radius: 3px;
     margin-right:35px;
-    width:120px;
+    width:130px;
 }
 .fa {
 margin:5px -17px 0 5px;
@@ -93,8 +93,7 @@ z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-    padding-bottom: 10%;
+    z-index: 2;  
 }
 
 .titles-container {
@@ -104,8 +103,8 @@ z-index: 1;
 }
 
 .titles-container h1{
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 65px;
+    font-weight: 700;
     margin:0 auto;
     padding-bottom: 3%;
 }
@@ -116,8 +115,7 @@ z-index: 1;
 }
 .titles-container p{
     font-size: 20px;
-    font-weight: 400;
-    padding-bottom: 3%;
+    font-weight: 400;    
 }
 .email-container{
     display: flex;
@@ -125,7 +123,7 @@ z-index: 1;
     justify-content: center;
     align-items: center;
     grid-template-columns: 50% 40%;
-    margin-top: 2%;
+    margin-top: 1%;
     border:none;
     text-decoration: none;
     cursor:pointer;
@@ -191,13 +189,13 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: -3% 10%;
     color: white;
 }
 .tv .animation-container{
     display:flex;
     flex-direction: row; 
-    /* position: relative; */
+    position: relative;
     width:100%;
     height: 100%;
     
@@ -225,7 +223,7 @@ section{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: -5% 6%;
     color: white;
     margin-bottom: 5%;
 }
@@ -236,7 +234,7 @@ section{
     justify-content: center; 
     align-items: center;
     position: relative;
-    width:160%;
+    width:100%;
     height: 100%;   
 }
 
@@ -244,7 +242,7 @@ section{
     position:relative;
     width: 100%;
     height: auto;
-    margin-bottom: -20%;
+    margin-bottom: -25%;
     z-index: -1;
 }
 .animation{
@@ -255,13 +253,13 @@ section{
     border:2px solid gray;
     border-radius:10px;
     background: #090909;
-    width:70%;
-    padding:2%;
+    width:60%;
+    padding:3%;
     z-index:1;
 }
 .animation-text{
     display: block;
-    margin-left:5%;
+    margin-left:3%;
 }
 .animation-text h4{
     color: #ffffff;
@@ -276,7 +274,7 @@ section{
 .mobile .animation-container .animation img{
     top:10%;
     width:50px;
-    height: 60px;
+    height: 70px;
 }
 
 
@@ -286,7 +284,7 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: -2% 9%;
     color: white;
 }
 .monitor .animation-container{
@@ -316,16 +314,20 @@ section{
 
 
 /* children section */
-.chidren {
+.children {
     display:flex;
     flex-direction: row-reverse; 
     justify-content: center;
+    /* keep justify-content as centre for all section- helps in css responsive; */
     align-items: center;
     position: relative;
-    margin: 0 5%;
+    margin: -4% 6%;
     color: white;
-    width:100%;
-    height: 100%;
+   }
+.children .animation-container img{
+    /* position:relative; */
+    width: 100%;
+    height: auto;
 }
 
 /* faq section */
@@ -463,69 +465,111 @@ text-decoration: underline;
     cursor: pointer;   
 }
 
-@media screen and(max-width:1440px){
+/* media query for desktop and large screen */
+@media screen and (min-width:1050px) and (max-width:1500px){
     .root{
-        padding:5% 5%;
+        padding-bottom:5%;
     }
-   .main-container{
-    margin:0 20%;
-   }
-}
-@media screen and(min-width:900px) and (max-width:1030px){
-    .root{
-        padding:5% 5%;
-    }
-   .main-container{
-    margin:0 20%;
-   }
-
-}
-@media screen and(min-width:680px) and (max-width:780px){
-    .root{
-        padding:5% 5%;
-    }
-   .main-container{
-    margin:0 20%;
-   }
-   .email-container input{
-    width:380px;
-    height: 4rem;
     
+    .navbar{
+    padding-top: 2%;
    }
-   .email-container button{
-    height: 4.1rem;
-    width:200px;
-    font-size:20px;
-}
-}
-
-@media screen and(min-width:300px) and (max-width:430px){
-    .root{
-        padding:5% 5%;
-    }
    .main-container{
-    margin:0 20%;
+    margin-top:5%;
    }
-   .titles-container h1{
-    font-size: 40px;
+   .main-container h1{
+    font-size: 55px;
+   }
+   .mobile{
+    margin: 0% 6%;
    }
    .chidren {
-    display:flex;
-    flex-direction: column;
-  }
-    
-   .email-container{
-    display: flex;
-    flex-direction: column;
-   }
-   .email-container input{
-    width:100px;
-    height: 3rem;
-    
-   }
-   .email-container button{
-    height: 3.1rem;
-    width:50px;
-    font-size:20px;
+    margin: -2% 6%;
+   }   
 }
+
+/* media query for laptop */
+@media screen and (min-width:920px) and (max-width:1050px){
+    .root{
+        padding-bottom:5%;
+    }
+    .main-container{
+        margin-top:8%;
+    }
+    .main-container h1{
+        font-size: 48px;
+    }
+    .main-container p{
+        font-size: 16px;
+    }
+    .tv, .mobile, .monitor, .children {
+        margin: 0%;
+    }
 }
+
+/* media query for tab */
+@media screen and (min-width:450px) and (max-width:920px){ 
+    main{
+        margin-right: -14%;
+    }
+    .root{
+        padding-bottom:20%;
+    }
+    .navbar{
+        margin-right: 5%;
+    }
+    .main-container{
+        margin-top:20%;
+    }
+    .main-container h1{
+        font-size: 45px;
+        font-weight:700;
+    }
+    .main-container h2{
+        font-size: 25px;
+        font-weight:300;
+    }
+    .email-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .email-container input{
+        border-radius: 5px;
+    }
+    .email-container button{
+        margin-top: 8%;
+        width:140px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 1%;
+    }
+    .text-container{
+        text-align: center;
+    }
+    .tv, .mobile, .monitor, .children {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tv h3{
+        font-size: 20px;
+    }
+    .faq h1{
+        font-size: 35px;
+    }
+}
+    /* @media screen and (min-width:300px) and (max-width:450px){ 
+        .main{
+            margin-right: -45%;
+        }
+        .root{
+            padding-bottom:30%; 
+        }
+        .main-container{
+            margin-top:40%;
+        }
+} */
+   
+
